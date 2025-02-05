@@ -10,10 +10,10 @@
     font-family: 'Poppins', sans-serif;
     background-color: #f4f4f4;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     height: 100vh;
   
   }
@@ -25,11 +25,13 @@
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 80%;
+    width: 60%;
     max-width: 80vh;
     max-height: 80vh;
     text-align: left;
     overflow-y: scroll;
+    margin-right: 50px;
+    margin-top: 30px;
   }
   
   
@@ -82,7 +84,10 @@
   /* Style the container div */
   #tasks {
     display: flex;
-    position: fixed;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    justify-content: flex-start; /* Align items at the top */
+    position: relative;
     bottom: 20px;
     left: 20px;
     background: #ffffff;
@@ -91,7 +96,11 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 300px;
     text-align: center;
-  }
+    height: auto; /* Allow it to fit content */
+    gap: 15px; /* Adds spacing between inputs and button */
+    margin-top: 50px;
+    margin-left: 50px;
+}
   
   /* Style labels */
   label {
@@ -101,31 +110,62 @@
     margin: 10px 0 5px;
   }
   
-  /* input fields */
   input[type="text"],
-  input[type="time"] {
-    width: 90%;
-    padding: 8px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
+  input[type="time"],
+  input[type="date"] {
+      width: 100%; /* Makes input fields full width */
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
   }
-  
+  /* Styles for the new section */
+#extra-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px; /* Space between task area and button */
+    width: 300px; /* Match width of #tasks */
+    text-align: center;
+    position: absolute;
+    margin-top: 550px;
+    margin-left: 70px;
+    
+}
+
+/* Styles for the large button */
+#largeBtn {
+    width: 100%; /* Makes button full width of its container */
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #eaa8d0;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+#largeBtn:hover {
+    background-color: #f6b6f9;
+}
+
   /* the submit button */
   #addBtn {
     background-color: #f9abcc;
     color: white;
-    padding: 10px;
+    padding: 12px;
     border: none;
     border-radius: 50%;
     cursor: pointer;
     font-size: 16px;
-    margin: 10px auto;
     width: 50px;
     height: 50px;
     transition: background 0.3s ease-in-out;
-  }
+    margin-top: 10px; /* Adds space between last input and button */
+}
   
   #addBtn:hover {
     background-color: #d67896;
