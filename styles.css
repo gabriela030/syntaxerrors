@@ -1,0 +1,70 @@
+/* Apply general styles to the body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+/* Style the container div */
+#tasks {
+    position: fixed;  
+    bottom: 20px;    
+    left: 20px;      
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+/* Style labels */
+label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+/* input fields */
+input[type="text"], 
+input[type="time"] {
+    width: 90%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* the submit button */
+#addBtn {
+    background-color: #f9abcc;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px auto;
+    width: 50px;
+    height: 50px;
+    transition: background 0.3s ease-in-out;
+}
+
+#addBtn:hover {
+    background-color: #d67896;
+}
+
+/* Makes the form responsive */
+@media (max-width: 400px) {
+    #tasks {
+        width: 90%;
+    }
+}

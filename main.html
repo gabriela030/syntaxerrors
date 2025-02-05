@@ -1,34 +1,27 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="styles.css">
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>One-Day Calendar</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <div class="calendar-container">
-        <h2>Today's Schedule</h2>
-        <div class="calendar">
-            <!-- Generate Time Slots -->
-            <div class="time-slot">12:00 AM</div>S
-            <div class="time-slot">1:00 AM</div>
-            <div class="time-slot">2:00 AM</div>
-            <div class="time-slot">3:00 AM</div>
-            <div class="time-slot">4:00 AM</div>
-            <div class="time-slot">5:00 AM</div>
-            <div class="time-slot">6:00 AM</div>
-            <div class="time-slot">7:00 AM</div>
-            <div class="time-slot">8:00 AM</div>
-            <div class="time-slot">9:00 AM</div>
-            <div class="time-slot">10:00 AM</div>
-            <div class="time-slot">11:00 AM</div>
-            <div class="time-slot">12:00 PM</div>
-            <div class="time-slot">1:00 PM</div>
-            <div class="time-slot">2:00 PM</div>
-            <div class="time-slot">3:00 PM</div>
-            <p>shfklsajfsajfiosa</p>
-        </div>
-    </div>
-</body>
+    <div id= "tasks">
+        <!--Inputs task-->
+        <form>
+         <label for="task">Enter Task:</label><br>
+         <input type="text" id="task" name="task"><br>
+        </form>
+        <!--Input time-->
+         <form id="taskForm">
+            <label for="appt">Task Time:</label><br>
+            <input type="time" id="appt" name="appt" step="900" required >
+            <input type="time" id="appt" name="appt" step="900" required>
+            <button id="addBtn">+</button>
+          </form>
+ </div>        
 </html>
