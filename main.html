@@ -1,27 +1,331 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="styles.css">
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>One-Day Calendar</title>
+    <title>Daily Schedule</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
+
 </head>
+
 <body>
-    <div id= "tasks">
+
+    <div id="tasks">
         <!--Inputs task-->
         <form>
-         <label for="task">Enter Task:</label><br>
-         <input type="text" id="task" name="task"><br>
+            <label for="task">Enter Task:</label><br>
+            <input type="text" id="task" name="task"><br>
         </form>
         <!--Input time-->
-         <form id="taskForm">
+        <form id="taskForm">
             <label for="appt">Task Time:</label><br>
-            <input type="time" id="appt" name="appt" step="900" required >
+            <input type="time" id="appt" name="appt" step="900" required>
             <input type="time" id="appt" name="appt" step="900" required>
             <button id="addBtn">+</button>
-          </form>
- </div>        
+        </form>
+    </div>
+
+    <!-- <!-- <h2>Daily Schedule</h2> -->
+    <div class="schedule-container">
+        <table class="schedule-table">
+            <tbody>
+                <!-- 12:00 AM -->
+                <tr>
+                    <td>12:00 AM</td>
+                    <td class="line">
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr class="eventbox">
+                    <td></td>
+                    <td id="12am">????</td>
+                </tr>
+
+                <!-- 1:00 AM -->
+                <tr>
+                    <td>1:00 AM</td>
+                    <td class="line">
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td class="event"></td>
+                </tr>
+
+                <!-- 2:00 AM -->
+                <tr>
+                    <td>2:00 AM</td>
+                    <td class="line">
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td class="event"></td>
+                </tr>
+
+                <!-- Continue for all time slots -->
+                <tr>
+                    <td>3:00 AM</td>
+                    <td class="line">
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td class="event"></td>
+                </tr>
+
+                <tr>
+                    <td>4:00 AM</td>
+                    <td class="line">
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td class="event"></td>
+                </tr>
+
+                <tr>
+                    <td>5:00 AM</td>
+                    <td class="line">
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td class="event"></td>
+                </tr>
+
+                <tr>
+                    <td>6:00 AM</td>
+                    <td class="line">
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td class="event"></td>
+                </tr>
+
+                <tr>
+                    <td>7:00 AM</td>
+                    <td class="line">
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td class="event"></td>
+                </tr>
+
+                <tr>
+                    <td>8:00 AM</td>
+                    <td class="line">
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td class="event"></td>
+                </tr>
+
+                <tr>
+                    <td>9:00 AM</td>
+                    <td class="line">
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td class="event"></td>
+                </tr>
+
+                <tr>
+                    <td>10:00 AM</td>
+                    <td class="line">
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td class="event"></td>
+                </tr>
+
+                <tr>
+                    <td>11:00 AM</td>
+                    <td class="line">
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td class="event"></td>
+                </tr>
+
+                <tr>
+                    <td>12:00 PM</td>
+                    <td class="line">
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td class="event"></td>
+                </tr>
+
+                <tr>
+                    <td>1:00 PM</td>
+                    <td class="line">
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td class="event"></td>
+                </tr>
+
+                <tr>
+                    <td>2:00 PM</td>
+                    <td class="line">
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td class="event"></td>
+                </tr>
+
+                <tr>
+                    <td>3:00 PM</td>
+                    <td class="line"></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td class="event"></td>
+                </tr>
+
+                <tr>
+                    <td>4:00 PM</td>
+                    <td class="line">
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td class="event"></td>
+                </tr>
+
+                <tr>
+                    <td>5:00 PM</td>
+                    <td class="line">
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td class="event"></td>
+                </tr>
+
+                <tr>
+                    <td>6:00 PM</td>
+                    <td class="line">
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td class="event"></td>
+                </tr>
+
+                <tr>
+                    <td>7:00 PM</td>
+                    <td class="line">
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td class="event"></td>
+                </tr>
+
+                <tr>
+                    <td>8:00 PM</td>
+                    <td class="line">
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td class="event"></td>
+                </tr>
+
+
+                <tr>
+                    <td>9:00 PM</td>
+                    <td class="line">
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td class="event"></td>
+                </tr>
+
+
+                <tr>
+                    <td>10:00 PM</td>
+                    <td class="line">
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td class="event"></td>
+                </tr>
+
+                <tr>
+                    <td>11:00 PM</td>
+                    <td class="line">
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td class="event"></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</body>
+
 </html>
